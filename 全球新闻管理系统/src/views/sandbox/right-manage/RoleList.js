@@ -1,9 +1,11 @@
 import React from 'react'
+import { Table } from 'antd'
+
 
 export default function RoleList() {
     return (
         <div>
-            RoleList
+            <Table></Table>
         </div>
     )
 }

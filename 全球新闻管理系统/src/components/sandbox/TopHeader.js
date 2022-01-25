@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Layout, Dropdown, Menu, Avatar } from 'antd';
+import { useNavigate } from "react-router";
 import {
     MenuUnfoldOutlined,
     MenuFoldOutlined,
@@ -13,6 +14,7 @@ export default function TopHeader() {
         setCollapsed(!collapsed) //取返
     }
 
+    let navigate = useNavigate();
     const menu = (
         <Menu>
             <Menu.Item>
@@ -24,7 +26,10 @@ export default function TopHeader() {
             <Menu.Item>
                 订单中心
             </Menu.Item>
-            <Menu.Item danger>退出登录</Menu.Item>
+            <Menu.Item danger onClick={()=>{
+                localStorage.removeItem("token")
+                navigate("/login"); //设置退出登录
+            }}>退出登录</Menu.Item>
         </Menu>
     );
 

@@ -1,0 +1,26 @@
+.imga{
+    background-image: url("./WechatIMG6.jpeg");
+    height: 100%;
+}
+
+.formContainer{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 500px;
+    height: 300px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+}
+
+.logintitle{
+    color: white;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+}
+.login-form-button {
+    width: 100%;
+}
