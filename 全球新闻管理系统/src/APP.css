@@ -1,6 +1,6 @@
 @import '~antd/dist/antd.css';
 
 ::-webkit-scrollbar {width: 5px;height: 5px;position: absolute;}
-::-webkit-scrollbar-thumb {background-color: hotpink;}
+::-webkit-scrollbar-thumb {background-color: rgb(245, 181, 229);}
 ::-webkit-scrollbar-track{background-color: #ddd;}
 /* 设置侧边栏滚动条样式 */
